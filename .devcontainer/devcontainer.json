@@ -42,7 +42,8 @@
 
   "containerEnv": {
       // TODO: use ${containerWorkspaceFolder} when it works in codespaces
-      "DOTNET_ROOT": "/workspaces/aspnetcore/.dotnet",
+      //"DOTNET_ROOT": "/workspaces/aspnetcore/.dotnet",
+      "DOTNET_ROOT": "/root/workspace/aspnetcore/.dotnet",
       "DOTNET_MULTILEVEL_LOOKUP": "0"
   },
 
@@ -51,7 +52,8 @@
       // "ASPNETCORE_Kestrel__Certificates__Default__Path": "/home/vscode/.aspnet/https/aspnetapp.pfx",
 
       // TODO: use ${containerWorkspaceFolder} when it works in codespaces
-      "PATH": "/workspaces/aspnetcore/.dotnet:${containerEnv:PATH}"
+      //"PATH": "/workspaces/aspnetcore/.dotnet:${containerEnv:PATH}"
+      "PATH": "/root/workspace/aspnetcore/.dotnet:${containerEnv:PATH}"
   },
 
   // Use 'postCreateCommand' to run commands after the container is created.
